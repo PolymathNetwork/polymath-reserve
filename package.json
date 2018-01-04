@@ -1,0 +1,38 @@
+{
+  "name": "polymath-reserve",
+  "version": "0.0.1",
+  "description": "Reserve multisig wallet for Polymath",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate-local": "truffle migrate --network=local --reset",
+    "migrate-ropsten": "truffle migrate --network=ropsten --reset",
+    "flatten": "sol-merger './contracts/*.sol' ./flat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PolymathNetwork/polymath-reserve.git"
+  },
+  "author": "Polymath Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PolymathNetwork/polymath-reserve/issues"
+  },
+  "homepage": "https://github.com/PolymathNetwork/polymath-reserve#readme",
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "ethereumjs-testrpc": "4.1.1",
+    "truffle": "4.0.1"
+  },
+  "devDependencies": {
+    "sol-merger": "0.1.2"
+  }
+}
